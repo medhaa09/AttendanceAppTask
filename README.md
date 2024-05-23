@@ -15,25 +15,6 @@ The Attendance App is a web application designed to facilitate student attendanc
 - MongoDB
 - Face++ API credentials
 
-### Project Structure
-```
-.
-├── main.go
-├── handlers
-│   └── auth.go
-├── models
-│   └── user.go
-├── utils
-│   ├── db.go
-│   └── token.go
-├── middleware
-│   ├── auth.go
-│   └── role.go
-├── .env
-├── Dockerfile
-└── README.md
-```
-
 ### Variables
 Change the following variables in main.go and handlers.go
 ```
@@ -69,7 +50,7 @@ SECRET_KEY=<Your JWT Secret Key>
 ### API Endpoints
 
 #### Authentication
-- **POST** `/login`: Login for both students and admins.
+- **POST** `/login`: Login for both students and admins. 
     - Request Body:
         ```json
         {
