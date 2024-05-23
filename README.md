@@ -26,8 +26,8 @@ SECRET_KEY=<Your JWT Secret Key>
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/attendance-app.git
-    cd attendance-app
+    git clone https://github.com/medhaa09/AttendanceAppTask
+    cd AttendanceAppTask
     ```
 
 2. **Install dependencies:**
@@ -111,23 +111,17 @@ SECRET_KEY=<Your JWT Secret Key>
 ## Detailed Explanation
 
 ### Authentication
-The `auth.go` file handles user authentication, including JWT generation and validation. Middleware functions ensure that only authenticated users can access certain routes.
+The `handlers.go` file handles user authentication, including JWT generation and validation. Middleware functions ensure that only authenticated users can access certain routes.
 
 ### Database Connection
-The `db.go` file in the `utils` directory handles the connection to the MongoDB database using environment variables specified in the `.env` file.
+The `store.go` file in the `utils` directory handles the connection to the MongoDB database.
 
 ### Middleware
-- **TokenAuthMiddleware:** Validates JWT tokens for secure routes.
-- **IsAdmin:** Ensures that only admin users can access certain routes.
-
-### Token Management
-The `token.go` file in the `utils` directory contains functions for generating and validating JWT tokens.
+- **TokenAuthMiddleware():** Validates JWT tokens for secure routes.
+- **IsAdmin():** Ensures that only admin users can access certain routes.
 
 ### Models
-The `user.go` file in the `models` directory defines the structure of user data stored in MongoDB.
-
-### Handlers
-The `auth.go` file in the `handlers` directory contains functions for handling authentication-related requests.
+The `models.go.go` file in the `models` directory defines the structure of user data stored in MongoDB.
 
 
 ## Conclusion
