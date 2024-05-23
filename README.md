@@ -67,7 +67,7 @@ SECRET_KEY=<Your JWT Secret Key>
         ```
 
 #### User Management
-- **POST** `/admin/register`: Admin registers a new user.
+- **POST** `/register`: Admin registers a new user.
     - Request Headers:
         ```http
         Authorization: Bearer <admin-token>
@@ -88,7 +88,7 @@ SECRET_KEY=<Your JWT Secret Key>
         ```
 
 #### Attendance
-- **POST** `/attendance/mark`: Mark attendance using facial recognition.
+- **POST** `/attendance`: Mark attendance using facial recognition.
     - Request Headers:
         ```http
         Authorization: Bearer <user-token>
