@@ -114,14 +114,14 @@ SECRET_KEY=<Your JWT Secret Key>
 The `handlers.go` file handles user authentication, including JWT generation and validation. Middleware functions ensure that only authenticated users can access certain routes.
 
 ### Database Connection
-The `store.go` file in the `utils` directory handles the connection to the MongoDB database.
+The `store.go` file in the `Store` directory handles the connection to the MongoDB database.
 
 ### Middleware
 - **TokenAuthMiddleware():** Validates JWT tokens for secure routes.
 - **IsAdmin():** Ensures that only admin users can access certain routes.
 
 ### Models
-The `models.go.go` file in the `models` directory defines the structure of user data stored in MongoDB.
+The `models.go` file in the `models` directory defines the structure of user data stored in MongoDB.
 
 
 ## Conclusion
